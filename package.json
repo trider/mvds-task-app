@@ -1,0 +1,25 @@
+{
+  "name": "graphql-task-app",
+  "version": "1.0.0",
+  "description": "Task App Api",
+  "main": "index.js",
+  "bin": {
+    "api_refactored": "src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@graphql-tools/schema": "^10.0.3",
+    "apollo-datasource-rest": "^0.9.3",
+    "apollo-server": "^3.0.0",
+    "apollo-server-core": "^3.13.0",
+    "apollo-server-express": "^2.16.1",
+    "apollo-server-lambda": "^3.13.0",
+    "graphql": "^15.8.0",
+    "mongodb": "^3.6.0"
+  },
+  "license": "ISC"
+}
