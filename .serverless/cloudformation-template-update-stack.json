@@ -208,7 +208,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apollo-lambda/dev/1715857062476-2024-05-16T10:57:42.476Z/apollo-lambda.zip"
+          "S3Key": "serverless/apollo-lambda/dev/1715865301257-2024-05-16T13:15:01.257Z/apollo-lambda.zip"
         },
         "Handler": "s_graphql.handler",
         "Runtime": "nodejs20.x",
@@ -226,14 +226,14 @@
         "GraphqlLogGroup"
       ]
     },
-    "GraphqlLambdaVersionblrBD3EHI0lxEFoswEJSesn7i0v2CgjkfBU3e36Dvw": {
+    "GraphqlLambdaVersionWpyET9rpu4ruHJsJlzAXrr9LViFrafuYM7s2eQhHs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GraphqlLambdaFunction"
         },
-        "CodeSha256": "z9uP3J0JM+qhrBfm9mffwciEnmYUPv6Aa/pqoLZhTyA="
+        "CodeSha256": "JNBwG15hBsTkT4BpprqWYwsFeBVvIPCt1pzwrILPBw8="
       }
     },
     "ApiGatewayRestApi": {
@@ -394,7 +394,7 @@
         "GraphqlLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1715857053538": {
+    "ApiGatewayDeployment1715865291400": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -554,7 +554,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apollo-lambda/dev/1715857062476-2024-05-16T10:57:42.476Z/custom-resources.zip"
+          "S3Key": "serverless/apollo-lambda/dev/1715865301257-2024-05-16T13:15:01.257Z/custom-resources.zip"
         },
         "FunctionName": "apollo-lambda-dev-custom-resource-apigw-cw-role",
         "Handler": "api-gateway-cloud-watch-role/handler.handler",
@@ -596,7 +596,7 @@
     "GraphqlLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GraphqlLambdaVersionblrBD3EHI0lxEFoswEJSesn7i0v2CgjkfBU3e36Dvw"
+        "Ref": "GraphqlLambdaVersionWpyET9rpu4ruHJsJlzAXrr9LViFrafuYM7s2eQhHs"
       },
       "Export": {
         "Name": "sls-apollo-lambda-dev-GraphqlLambdaFunctionQualifiedArn"
